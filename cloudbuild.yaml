@@ -9,7 +9,7 @@ steps:
         - 'set'
         - 'image'
         - 'deployment/myapp'
-        - 'myapp=gcr.io/rebatemango-dev/k8-deployment:v1'
+        - 'myapp-d9f5d7989-stwj4=gcr.io/rebatemango-dev/k8-deployment'
     env:
         - 'CLOUDSDK_COMPUTE_ZONE=asia-southeast1-b'
         - 'CLOUDSDK_CONTAINER_CLUSTER=rebate-cluster-dev'
