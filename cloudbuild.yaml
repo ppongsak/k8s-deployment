@@ -8,8 +8,8 @@ steps:
     args:
         - 'set'
         - 'image'
-        - 'deployment/myapp-d9f5d7989-stwj4'
-        - 'myapp-d9f5d7989-stwj4=gcr.io/rebatemango-dev/k8-deployment'
+        - 'deployments/myapp'
+        - 'myapp=gcr.io/rebatemango-dev/k8-deployment:latest'
     env:
         - 'CLOUDSDK_COMPUTE_ZONE=asia-southeast1-b'
         - 'CLOUDSDK_CONTAINER_CLUSTER=rebate-cluster-dev'
