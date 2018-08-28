@@ -1,9 +1,9 @@
 steps:
-  - name: 'mount'
+  - name: 'gcr.io/cloud-builders/docker'
+    # args: ['public', '/persistent_volume/file']
     volumes:
       - name: 'public'
         path: '/public'
-        # args: ['public', '/persistent_volume/file']
   - name: 'gcr.io/cloud-builders/docker'
     args:
         ['build', '-t', 'gcr.io/rebatemango-dev/k8-deployment', '.']
