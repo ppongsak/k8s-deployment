@@ -1,7 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args:
-        ['build', '-t', 'gcr.io/rebatemango-dev/centos-phpfm-nginx', '.']
+        ['build', '-t', 'gcr.io/rebatemango-dev/k8-deployment', '.']
 images: ['gcr.io/$PROJECT_ID/k8-deployment']
   # - name: 'gcr.io/cloud-builders/docker'
   #   args: ['push', 'gcr.io/rebatemango-dev/k8s-deploment']
