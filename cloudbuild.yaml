@@ -8,7 +8,7 @@ steps:
     args:
         - 'set'
         - 'image'
-        - 'deployment/myapp'
+        - 'deployment/myapp-d9f5d7989-stwj4'
         - 'myapp-d9f5d7989-stwj4=gcr.io/rebatemango-dev/k8-deployment'
     env:
         - 'CLOUDSDK_COMPUTE_ZONE=asia-southeast1-b'
