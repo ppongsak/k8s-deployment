@@ -1,0 +1,16 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+        ['build', '-t', 'gcr.io/rebatemango-dev/centos-phpfm-nginx', '.']
+images: ['gcr.io/$PROJECT_ID/k8-deployment']
+  # - name: 'gcr.io/cloud-builders/docker'
+  #   args: ['push', 'gcr.io/rebatemango-dev/k8s-deploment']
+  # - name: 'gcr.io/cloud-builders/kubectl'
+  #   args:
+  #       - 'set'
+  #       - 'gcr.io/rebatemango-dev/centos-phpfm-nginx'
+  #       - 'deployment/mayapp'
+  #       - 'myapp=gcr.io/rebatemango-dev/centos-phpfm-nginx'
+  #   env:
+  #       - 'CLOUDSDK_COMPUTE_ZONE=asia-southeast1-b'
+  #       - 'CLOUDSDK_CONTAINER_CLUSTER=rebate-cluster-dev'
