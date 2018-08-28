@@ -3,13 +3,13 @@ steps:
     args:
         ['build', '-t', 'gcr.io/rebatemango-dev/k8-deployment', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/rebatemango-dev/k8s-deploment']
+    args: ['push', 'gcr.io/rebatemango-dev/k8-deployment']
   - name: 'gcr.io/cloud-builders/kubectl'
     args:
         - 'set'
-        - 'gcr.io/rebatemango-dev/k8s-deploment'
+        - 'gcr.io/rebatemango-dev/k8-deployment'
         - 'deployment/mayapp'
-        - 'myapp=gcr.io/rebatemango-dev/k8s-deploment'
+        - 'myapp=gcr.io/rebatemango-dev/k8-deployment'
     env:
         - 'CLOUDSDK_COMPUTE_ZONE=asia-southeast1-b'
         - 'CLOUDSDK_CONTAINER_CLUSTER=rebate-cluster-dev'
