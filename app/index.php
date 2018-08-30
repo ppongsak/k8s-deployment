@@ -22,6 +22,18 @@ echo "<pre>";
 print_r($_SERVER);
 echo "</pre>";
 
+echo '$_ENV';
+echo "<pre></pre>";
+
+echo "<pre>";
+print_r($_ENV);
+echo "</pre>";
+
+echo 'getenv()';
+echo "<pre></pre>";
+echo "<pre>";
+print_r(getenv());
+echo "</pre>";
 // $servername = "127.0.0.1";
 // $username = "proxyuser";
 // $password = "rebate1234";
