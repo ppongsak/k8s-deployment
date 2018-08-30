@@ -1,7 +1,7 @@
 FROM pongsak/centos-phpfpm-nginx:4.0
 MAINTAINER "Pongsak Prabparn" <pongsak@rebatemango.com>
 
-COPY ./public /var/www/html
+COPY ./app /var/www/html
 
 # install Composer and plugins
 WORKDIR /var/www/html
