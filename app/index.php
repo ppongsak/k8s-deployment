@@ -1,5 +1,5 @@
 <?php
-echo "k8-deployment 1.0.0 yaml";
+echo "k8-deployment 2.0.0 yaml";
 
 echo "<pre>";
 echo "======================================================================";
@@ -15,7 +15,7 @@ echo "<pre></pre>";
 
 $servername = "127.0.0.1";
 $username = "proxyuser";
-$password = "[Z8rLQgTRx7JENB5AxGSTT5HZ";
+$password = "rebate1234";
 
 echo $servername;
 echo "<pre></pre>";
