@@ -8,14 +8,18 @@ echo "</pre>";
 echo "connecting to mysql";
 echo "<pre></pre>";
 
+$servername = getenv('DEV_DB_HOST');
+$username = getenv('DB_USER');
+$password = getenv('DB_PASSWORD');
 
-$servername = $_ENV['DEV_DB_HOST'];
-$username = $_ENV['DB_USER'];
-$password = $_ENV['DB_PASSWORD'];
 
-echo "<pre>";
-print_r($_ENV);
-echo "</pre>";
+// $servername = $_ENV['DEV_DB_HOST'];
+// $username = $_ENV['DB_USER'];
+// $password = $_ENV['DB_PASSWORD'];
+
+// echo "<pre>";
+// print_r($_ENV);
+// echo "</pre>";
 
 // $servername = "127.0.0.1";
 // $username = "proxyuser";
