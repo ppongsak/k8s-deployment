@@ -1,5 +1,5 @@
 <?php
-echo "k8-deployment 3.0.0 yaml";
+echo "k8-deployment 5.0.0 yaml";
 
 echo "<pre>";
 echo "======================================================================";
@@ -12,6 +12,10 @@ echo "<pre></pre>";
 $servername = $_ENV['DEV_DB_HOST'];
 $username = $_ENV['DB_USER'];
 $password = $_ENV['DB_PASSWORD'];
+
+echo "<pre>";
+print_r($_ENV);
+echo "</pre>";
 
 // $servername = "127.0.0.1";
 // $username = "proxyuser";
