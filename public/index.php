@@ -1,5 +1,5 @@
 <?php
-echo "hello k.somchai tag:6.0";
+echo "k8-deployment 1.0";
 
 echo "<pre>";
 echo "======================================================================";
