@@ -12,7 +12,8 @@ $servername = getenv('DEV_DB_HOST');
 $username = getenv('DB_USER');
 $password = getenv('DB_PASSWORD');
 
-
+echo "server";
+echo "<pre></pre>";
 // $servername = $_ENV['DEV_DB_HOST'];
 // $username = $_ENV['DB_USER'];
 // $password = $_ENV['DB_PASSWORD'];
